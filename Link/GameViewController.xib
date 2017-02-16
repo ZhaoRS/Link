@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController">
+            <connections>
+                <outlet property="startBtn" destination="UX6-vu-rKh" id="VRs-dW-lRy"/>
+                <outlet property="timeText" destination="HFW-E1-71e" id="LjI-Cw-qz3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4MD-30-hPc">
+                    <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-vu-rKh">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="49"/>
+                            <connections>
+                                <action selector="starGame:" destination="-1" eventType="touchUpInside" id="MKP-qo-hVh"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余时间:100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFW-E1-71e">
+                            <rect key="frame" x="300" y="0.0" width="300" height="49"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1176470588" green="0.44705882349999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HFW-E1-71e" secondAttribute="trailing" id="18M-oa-w8q"/>
+                        <constraint firstItem="HFW-E1-71e" firstAttribute="top" secondItem="4MD-30-hPc" secondAttribute="top" id="WUt-Si-2EE"/>
+                        <constraint firstAttribute="bottom" secondItem="UX6-vu-rKh" secondAttribute="bottom" id="Y4E-LY-bky"/>
+                        <constraint firstItem="UX6-vu-rKh" firstAttribute="leading" secondItem="4MD-30-hPc" secondAttribute="leading" id="eZi-kw-uzz"/>
+                        <constraint firstItem="UX6-vu-rKh" firstAttribute="top" secondItem="4MD-30-hPc" secondAttribute="top" id="gYS-7g-Q7M"/>
+                        <constraint firstAttribute="bottom" secondItem="HFW-E1-71e" secondAttribute="bottom" id="jOZ-ZP-1bZ"/>
+                        <constraint firstItem="UX6-vu-rKh" firstAttribute="centerX" secondItem="4MD-30-hPc" secondAttribute="centerX" multiplier="0.5" id="jzw-w0-Th8"/>
+                        <constraint firstItem="HFW-E1-71e" firstAttribute="leading" secondItem="UX6-vu-rKh" secondAttribute="trailing" id="w8Z-pe-DF7"/>
+                        <constraint firstAttribute="height" constant="49" id="x8v-1a-Rjh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4MD-30-hPc" secondAttribute="bottom" id="8og-Xt-MQP"/>
+                <constraint firstItem="4MD-30-hPc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eNz-t8-lMv"/>
+                <constraint firstAttribute="trailing" secondItem="4MD-30-hPc" secondAttribute="trailing" id="yht-vv-kPN"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
